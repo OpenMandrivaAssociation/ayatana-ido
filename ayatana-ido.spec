@@ -6,22 +6,21 @@
 
 Name:		ayatana-ido
 Version:	0.4.90
-Release:	%mkrel 1
+Release:	1
 Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
 URL:		https://ayatanaindicators.github.io/
 Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}/%{name}-%{version}.tar.gz
 Patch0:		ayatana-ido-0.4.90-implicit-conversion-from-GtkStateType-to-GtkStateFlags.patch
-BuildRequires:	gcc-c++
+
 BuildRequires:	gtk-doc
 BuildRequires:	mate-common
-BuildRequires:	vala >= 0.16
-BuildRequires:	pkgconfig(gio-2.0) >= 2.37.0
-BuildRequires:	pkgconfig(glib-2.0) >= 2.37.0
+BuildRequires:	vala
+BuildRequires:	pkgconfig(gio-2.0)
+BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
-BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 Widgets and other objects used for indicators.
