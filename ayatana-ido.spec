@@ -12,7 +12,6 @@ Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
 URL:		https://ayatanaindicators.github.io/
 Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:		ayatana-ido-0.4.90-implicit-conversion-from-GtkStateType-to-GtkStateFlags.patch
 
 BuildRequires:	gtk-doc
 BuildRequires:	mate-common
