@@ -5,14 +5,13 @@
 %define develname	%mklibname ayatana-ido3 -d
 
 Name:		ayatana-ido
-Version:	0.4.90
+Version:	0.8.0
 Release:	1
 Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
 URL:		https://ayatanaindicators.github.io/
-Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:		ayatana-ido-0.4.90-implicit-conversion-from-GtkStateType-to-GtkStateFlags.patch
+Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildRequires:	gtk-doc
 BuildRequires:	mate-common
