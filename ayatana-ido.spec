@@ -11,7 +11,7 @@ Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
 URL:		https://ayatanaindicators.github.io/
-Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires:	gtk-doc
 BuildRequires:	mate-common
