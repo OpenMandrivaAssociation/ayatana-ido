@@ -5,7 +5,7 @@
 %define develname	%mklibname ayatana-ido3 -d
 
 Name:		ayatana-ido
-Version:	0.8.1
+Version:	0.8.2
 Release:	1
 Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
