@@ -5,14 +5,15 @@
 %define develname	%mklibname ayatana-ido3 -d
 
 Name:		ayatana-ido
-Version:	0.8.2
-Release:	2
+Version:	0.9.2
+Release:	1
 Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
 URL:		https://ayatanaindicators.github.io/
 Source0:	https://github.com/AyatanaIndicators/ayatana-ido/archive/%{version}/%{name}-%{version}.tar.gz
 
+BuildRequires:  cmake
 BuildRequires:	gtk-doc
 BuildRequires:	mate-common
 BuildRequires:	vala
@@ -65,12 +66,11 @@ Header files for development with %{name}3 (GTK+3).
 %autosetup -p1
 
 %build
-NOCONFIGURE=1 mate-autogen
-%configure
+%cmake
 %make_build
 
 %install
-%make_install
+%make_install -C build
 
 find %{buildroot} -name '*.la' -delete
 
@@ -87,4 +87,4 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/libayatana-ido3-%{api}.so
 %{_libdir}/pkgconfig/libayatana-ido3-%{api}.pc
 %{_datadir}/gir-1.0/AyatanaIdo3-%{api}.gir
-%{_datadir}/vala/vapi/AyatanaIdo3-%{api}.vapi
+%{_datadir}/vala/vapi/libayatana-ido3-%{api}.vapi
