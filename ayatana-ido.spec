@@ -87,4 +87,4 @@ find %{buildroot} -name '*.la' -delete
 %{_libdir}/libayatana-ido3-%{api}.so
 %{_libdir}/pkgconfig/libayatana-ido3-%{api}.pc
 %{_datadir}/gir-1.0/AyatanaIdo3-%{api}.gir
-%{_datadir}/vala/vapi/AyatanaIdo3-%{api}.vapi
+%{_datadir}/vala/vapi/libayatana-ido3-%{api}.vapi
