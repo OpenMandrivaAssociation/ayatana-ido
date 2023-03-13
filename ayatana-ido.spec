@@ -66,7 +66,7 @@ Header files for development with %{name}3 (GTK+3).
 %autosetup -p1
 
 %build
-%cmake
+%cmake -DENABLE_TESTS=OFF
 %make_build
 
 %install
