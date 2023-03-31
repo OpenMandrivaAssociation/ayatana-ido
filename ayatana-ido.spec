@@ -6,7 +6,7 @@
 
 Name:		ayatana-ido
 Version:	0.9.3
-Release:	1
+Release:	2
 Summary:	Ayatana Indicator Display Objects
 Group:		System/Libraries
 License:	GPLv3 AND LGPLv3 AND LGPLv2+
